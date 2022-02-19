@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Andy Jensen</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 Arial, sans-serif;
+        text-align: center;
+        overflow: hidden;
+      }
+      #bg {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("bg.jpg");
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .caption {
+        opacity: 0.35;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 30px;
+        letter-spacing: 10px;
+        flex: 0 50 100%;
+      }
+      .highlight {
+        color: #00d2ff;
+        font-weight: bold;
+      }
+      a {
+          color:#ffffff;
+          text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg">
+      <div class="caption">
+        <span class="highlight">PROJECTS:</span><br />
+        <a href="https://andyjensen.github.io/shoot-the-clown/" target="_self">SHOOT THE CLOWN</a>
+      </div>
+    </div>
+    <script src="konami.js"></script>
+    <script>
+      let yeet = new Konami(function () {
+        document.getElementById("bg").style.backgroundImage = "url(oprah.gif)"
+      })
+    </script>
+  </body>
+</html>
